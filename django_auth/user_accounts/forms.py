@@ -5,18 +5,15 @@ from django.core.exceptions import ValidationError
 class SignUpForm(forms.ModelForm):
     username = forms.CharField(
         max_length=150, 
-        help_text="Max length: 150 characters",
         widget=forms.TextInput(attrs={'placeholder': 'Username'})
     )
     email = forms.EmailField(
         max_length=255, 
-        help_text="Enter a valid email address",
         widget=forms.EmailInput(attrs={'placeholder': 'Email'})
     )
     password = forms.CharField(
         min_length=8, 
         widget=forms.PasswordInput(attrs={'placeholder': 'Password'}), 
-        help_text="Minimum 8 characters"
     )
     confirm_password = forms.CharField(
         widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password'})
