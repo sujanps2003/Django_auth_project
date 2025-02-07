@@ -80,29 +80,6 @@ This will print the password reset link to the console.
 | `/reset/<uidb64>/<token>/` | Reset password page                        |
 | `/change-password/`        | Change password (Authenticated users only) |
 
-## Folder Structure
-
-```
-├── django_auth/
-│   ├── user_accounts/
-│   │   ├── templates/user_accounts/
-│   │   │   ├── login.html
-│   │   │   ├── signup.html
-│   │   │   ├── dashboard.html
-│   │   │   ├── profile.html
-│   │   │   ├── forget_password.html
-│   │   │   ├── password_reset.html
-│   │   │   ├── confirm_password.html
-│   │   │   ├── password_complete.html
-│   │   │   ├── change_password.html
-│   │   ├── views.py
-│   │   ├── urls.py
-│   │   ├── forms.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── manage.py
-```
-
 ## How It Works
 
 ### 🔹 User Registration
